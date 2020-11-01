@@ -1,9 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-
 const writeFileAsync = util.promisify(fs.writeFile);
-
 const generateMarkdown = require("./utils/generateMarkdown");
 // array of questions for user
 const questions = [
@@ -62,12 +60,14 @@ async function writeToFile(fileName, data) {
      });
 }
 
+// const writeFileAsync = util.promisify(fs.writeFile);
+
 // function to initialize program
 async function init() {
      try {
           const answers = await promptUser();
           const readMe = generateMarkdown(answers);
-          await writeFileAsync("README.md", readMe);
+          await writeToFile("README.md", readMe);
           console.log("README.me generated successfully");
      } catch (err) {
           console.log(err);
