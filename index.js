@@ -86,7 +86,7 @@ const init = async () => {
           await writeToFile("README.md", readMe);
 
           //print the message to user on successful creation of README.md file
-          console.log("README.me generated successfully");
+          console.log("README.md generated successfully");
      } catch (err) {
           //catch block to log the error if occured
           console.log(err);
