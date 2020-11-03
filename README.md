@@ -2,7 +2,7 @@
 
 ## Description:
 
-This applicaton uses node.js,fs,inquirer and util to prompt user to get details of the project and construct a readMe markdown and write the document to the README.me file.
+This applicaton uses node.js,fs,inquirer and util to prompt user to get details of the project and construct a readMe markdown and write the document to the README.md file.
 
 ## TableofContents
 
@@ -12,7 +12,7 @@ This applicaton uses node.js,fs,inquirer and util to prompt user to get details 
 -    [Contributing](#contributing)
 -    [Tests](#tests)
 -    [Questions](#questions)
--    [Demo](#demo)
+-    [Demo](#demoLinks)
 
 ## Installation:
 
